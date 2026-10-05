@@ -1,0 +1,41 @@
+/* Estilos personalizados para complementar Bootstrap */
+
+/* Desplazamiento suave al hacer clic en los enlaces del menú */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Compensar la altura de la navbar fija para que el scroll no tape los títulos */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Sección Hero con un degradado moderno */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    min-height: 80vh; /* Ocupa el 80% de la altura de la pantalla */
+}
+
+/* Imagen de perfil con borde y efecto hover */
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Efecto de elevación en las tarjetas de proyectos al pasar el mouse */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
